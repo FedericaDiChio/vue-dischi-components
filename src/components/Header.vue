@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-          <img src="" />
+          <img src="@/assets/logo.png" />
         </div>
     </header>
 </template>
@@ -12,17 +12,16 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
-  background-color: #2e3a46;
   height: 70px;
   padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-//   header img {
-//     height: 50px;
-//   }
+    img {
+      height: 50px;
+    }
 }
 </style>

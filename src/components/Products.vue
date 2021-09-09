@@ -17,6 +17,11 @@ export default {
       albums: [],
     };
   },
+// computed: {
+//     sortedAlbums(){
+//      return this.albums.sort((a, b) => a.year - b.year);
+//      }
+//     },
   created() {
     axios
       .get("https://flynn.boolean.careers/exercises/api/array/music")

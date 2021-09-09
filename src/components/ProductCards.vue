@@ -1,9 +1,9 @@
 <template>
   <div class="card">
     <img :src="album.poster" :alt="album.title" />
-    <h2 class="title">{{ album.title }}</h2>
-    <address class="author">{{ album.title }}</address>
-    <time datetime="" class="year">{{ album.year }}</time>
+    <h2 class="title">{{ album.title.toUpperCase() }}</h2>
+    <address class="author">{{ album.author }}</address>
+    <time :datetime="album.year" class="year">{{ album.year }}</time>
   </div>
 </template>
 
@@ -16,7 +16,6 @@ export default {
 
 <style lang="scss" scoped>
     .card {
-  background-color: #2e3a46;
   padding: 20px;
   margin: 20px;
   flex-basis: 200px;
@@ -29,15 +28,15 @@ export default {
 }
 
 .title {
+  font-size: 18px;
   color: #fff;
   margin: 15px 0;
 }
-.author, .year {
-  color: #808080;
-  font-size: 21px;
+.author {
+   font-size: 16px;
 }
 .year {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 </style>
